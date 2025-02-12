@@ -8,7 +8,7 @@ import socket
 
 # Takes the cidr from the command line
 parser = argparse.ArgumentParser(description='IP and port scanner')
-parser.add_argument('--port', '-p', type=str, help='List of ports to scan, default scans first 1000 ports')
+parser.add_argument('--port', '-p', type=str, help='List of ports to scan')
 parser.add_argument('cidr', type=str, help='CIDR notation for IP range to scan')
 args = parser.parse_args()
 
@@ -42,8 +42,6 @@ def parse_ports(port_str):
 # Get the list of ports to scan
 if args.port:
     ports = parse_ports(args.port)
-else:
-    ports = range(1, 1001)
 
 # Function to check if a port is open
 def is_port_open(ip, port):
