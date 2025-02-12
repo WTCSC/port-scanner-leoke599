@@ -1,1 +1,5 @@
-[![Open in Codespaces](https://classroom.github.com/assets/launch-codespace-2972f46106e565e64193e422d61a12cf1da4916b45550586e14ef0a7c637dd04.svg)](https://classroom.github.com/open-in-codespaces?assignment_repo_id=18025661)
+# IP and Port Scanner
+This program scans IP addresses from a cidr address and if it's up, it  will check the ports on the address too. It will show what port is open, but won't return ports that are used.
+
+## Set up
+There is not m
